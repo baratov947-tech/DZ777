@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #282c34;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-link:hover {
+    color: #61dafb;
+}
+
+.content {
+    flex: 1; /* Растягивает контент, прижимая футер к низу */
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+
+/* Стили для карточек постов */
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.read-more, .back-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover, .back-link:hover {
+    text-decoration: underline;
+}
+
+.single-post h1 {
+    margin-bottom: 20px;
+}
+
+.single-post p {
+    line-height: 1.6;
+    font-size: 18px;
+}
